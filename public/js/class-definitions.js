@@ -954,22 +954,6 @@ class Animal {
   }
 }
 
-
-//class Person {
-//   constructor(name, money, age, gender){
-//     this.name = name;
-//     this.money = money;
-//     this.age = age;
-//     this.gender = gender;
-//   }
-//   spendMoney(amount){
-//     this.money -= amount;
-//   }
-//   earnMoney(amount){
-//     this.money += amount;
-//   }
-//}
-
 /**
  * Step 51
  *
@@ -993,7 +977,15 @@ class Vehicle {
  * value of the sides property to null.
  *
  */
-
+class Shape {
+  constructor(sides){
+    if(sides<3 || Number.isNaN(sides)){
+      this.sides = null;
+    }else{
+      this.sides = sides;
+    }
+  }
+}
 
 /**
  * Step 53
@@ -1002,7 +994,12 @@ class Vehicle {
  * @param {anything} contents The contents of the box
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
-
+class Box {
+  constructor(contents, isOpen){
+    this.contents = contents;
+    this.isOpen = isOpen;
+  }
+}
 
 /**
  * Step 54
