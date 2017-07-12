@@ -430,20 +430,28 @@ function favoritePlanet(currentPlanet){
  *   earnMoney
  *
  */
-class Person {
-  constructor(name, money, age, gender){
-    this.name = name;
-    this.money = money;
-    this.age = age;
-    this.gender = gender;
-  }
-  spendMoney(amount){
-    this.money -= amount;
-  }
-  earnMoney(amount){
-    this.money += amount;
-  }
+// class Person {
+//   constructor(name, money, age, gender){
+//     this.name = name;
+//     this.money = money;
+//     this.age = age;
+//     this.gender = gender;
+//   }
+//   spendMoney(amount){
+//     this.money -= amount;
+//   }
+//   earnMoney(amount){
+//     this.money += amount;
+//   }
+//}
+
+function Person(name, money, age, gender){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
 }
+
 
 /* Step 28
  *
@@ -719,6 +727,16 @@ Stapler.prototype.staplePapers = function(numOfPapers){
  *   addDiscovery
  *
  */
+function Scientist(name, money, age, gender){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+  this.disciplines = [];
+  this.discoveries = [];
+}
+
+
 
 
 /* Step 36
@@ -741,7 +759,22 @@ Stapler.prototype.staplePapers = function(numOfPapers){
  *   rob
  *
  */
+function BankAccount(balance, owner){
+  this.balance = balance;
+  this.owner = owner;
+}
 
+BankAccount.prototype.withdraw = function(){
+
+}
+
+BankAccount.prototype.deposit = function(){
+
+}
+
+BankAccount.prototype.rob = function(){
+
+}
 
 /* Step 37
  *
@@ -914,7 +947,28 @@ Stapler.prototype.staplePapers = function(numOfPapers){
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
+class Animal {
+  constructor(species, gender){
+    this.species = species;
+    this.gender = gender;
+  }
+}
 
+
+//class Person {
+//   constructor(name, money, age, gender){
+//     this.name = name;
+//     this.money = money;
+//     this.age = age;
+//     this.gender = gender;
+//   }
+//   spendMoney(amount){
+//     this.money -= amount;
+//   }
+//   earnMoney(amount){
+//     this.money += amount;
+//   }
+//}
 
 /**
  * Step 51
@@ -923,7 +977,12 @@ Stapler.prototype.staplePapers = function(numOfPapers){
  * @param {string} make The vehicle's make
  * @param {string} model The vehicle's model
  */
-
+class Vehicle {
+  constructor(make, model){
+    this.make = make;
+    this.model = model;
+  }
+}
 
 /**
  * Step 52
