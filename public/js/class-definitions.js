@@ -361,14 +361,7 @@ function browseURL(browser){
     return false;
   }
 }
-// let browsers = {
-//   Chromium: "google.com",
-//   Safari: "apple.com",
-//   Opera: "opera.com",
-//   Firefox: "mozilla.org",
-//   Sleipnir: "fenrir-inc.com",
-//   Konqueror: "konqueror.org"
-// };
+
 /* Step 25
  *
  * Define a function named "listLivingOrgClass" that
@@ -378,7 +371,11 @@ function browseURL(browser){
  * @return {String}
  *
  */
-
+function listLivingOrgClass(){
+  return livingOrganismClassification.reduce(function(html, organism){
+    return html + "<li>"+organism+"</li>";
+  }, "<ul>")+"</ul>";
+}
 
 /* Step 26
  *
@@ -399,7 +396,16 @@ function browseURL(browser){
  * @return {String}
  *
  */
+function favoritePlanet(currentPlanet){
+  if(planets.indexOf(currentPlanet)>-1){
 
+  }else{
+    return currentPlanet + "is not a planet!";
+  }
+
+}
+
+// let planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
 
 /* Step 27
  *
