@@ -354,8 +354,21 @@ function drink(type){
  * @return {String if true else return false}
  *
  */
-
-
+function browseURL(browser){
+  if(browsers.hasOwnProperty(browser)){
+    return browsers[browser];
+  }else{
+    return false;
+  }
+}
+// let browsers = {
+//   Chromium: "google.com",
+//   Safari: "apple.com",
+//   Opera: "opera.com",
+//   Firefox: "mozilla.org",
+//   Sleipnir: "fenrir-inc.com",
+//   Konqueror: "konqueror.org"
+// };
 /* Step 25
  *
  * Define a function named "listLivingOrgClass" that
