@@ -651,14 +651,6 @@ PrincessLeia.prototype.marries = function(loveInterest){
   }
 }
 
-//  * Add a method "marries" that takes a prospective
-//  * love interest and returns true for "Han Solo" or false for anyone
-//  * else.
-//  *
-//  * In the 'marries' method - Add a message of disapproval for "Luke Skywalker"
-//  * "Gross!"
-
-
 /* Step 34
  *
  * Define an ES5 class named "Stapler" with properties "color"
@@ -676,7 +668,18 @@ PrincessLeia.prototype.marries = function(loveInterest){
  *   staplePapers
  *
  */
+function Stapler(color, maxPapers){
+  this.color = color;
+  this.maxPapers = maxPapers;
+}
 
+Stapler.prototype.staplePapers = function(numOfPapers){
+  if(numOfPapers<=this.maxPapers){
+    return true;
+  }else{
+    return false;
+  }
+}
 
 /* Step 35
  *
