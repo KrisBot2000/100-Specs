@@ -306,7 +306,13 @@ function addNumbers(firstNum, secondNum){
  * @return {Bool}
  *
  */
-
+function installLinux(type){
+  if(linuxFlavors.indexOf(type)>-1){
+    return true;
+  }else{
+    return false;
+  }
+}
 
 /* Step 23
  *
@@ -325,7 +331,17 @@ function addNumbers(firstNum, secondNum){
  * @return {Bool when False, String when True}
  *
  */
-
+function drink(type){
+  if(beers.hasOwnProperty(type)){
+    let description = beers[type];
+    if(Array.isArray(description)){
+      description = description.join(" and ");
+    }
+    return "This " + type + " is " + description + " .";
+  }else{
+    return false;
+  }
+}
 
 /* Step 24
  *
