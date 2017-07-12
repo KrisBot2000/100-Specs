@@ -260,7 +260,14 @@ let scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  *                  "Golden"
  *
  */
-
+let beers = {
+  IPA: "Ale",
+  Lager: "Strong",
+  Heffeweisen: "German",
+  Stout: ["Thick", "Dark"],
+  Porter: "Bitter",
+  Ale: ["Light", "Golden"]
+};
 
 /* Step 20
  *
