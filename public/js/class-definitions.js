@@ -398,9 +398,10 @@ function listLivingOrgClass(){
  */
 function favoritePlanet(currentPlanet){
   if(planets.indexOf(currentPlanet)>-1){
-
+    let i = Math.floor(Math.random()*8);
+    return `I'm from ${currentPlanet} but I wish I could go to ${planets[i]}.`;
   }else{
-    return currentPlanet + "is not a planet!";
+    return currentPlanet + " is not a planet!";
   }
 
 }
@@ -429,7 +430,22 @@ function favoritePlanet(currentPlanet){
  *   earnMoney
  *
  */
+class Person {
+  constructor(name, money, age, gender){
+    this.name = name;
+    this.money = money;
+    this.age = age;
+    this.gender = gender;
+  }
 
+  spendMoney(amount){
+    this.money -= amount;
+  }
+
+  earnMoney(amount){
+    this.money += amount;
+  }
+}
 
 /* Step 28
  *
