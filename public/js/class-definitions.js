@@ -464,13 +464,6 @@ function purchaseLaptop(laptop){
   }
 }
 
-// let laptopCosts = {
-//   MacBook: 1500,
-//   Alienware: 2500,
-//   HP: 499,
-//   Surface: 320
-// };
-
 /* Step 29
  *
  * Define a function named "canTalkAbout" that takes
@@ -577,6 +570,18 @@ Garden.prototype.grow = function(){
  *   removePlanet
  *
  */
+
+function SolarSystem(){
+  this.planets = [];
+}
+
+SolarSystem.prototype.addPlanet = function(planet){
+  this.planets.push(planet);
+}
+
+SolarSystem.prototype.removePlanet = function(planet){
+  this.planets.pop();
+}
 
 
 /* Step 33
