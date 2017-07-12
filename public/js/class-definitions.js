@@ -4,7 +4,7 @@
  * then set it's value to null;
  *
  */
-var unicorn = null;
+let unicorn = null;
 
 /* Step 2
  *
@@ -12,7 +12,7 @@ var unicorn = null;
  * then assign it to be the value of "Atari"
  *
  */
-var videogame_system = "Atari";
+let videogame_system = "Atari";
 
 /* Step 3
  *
@@ -20,7 +20,7 @@ var videogame_system = "Atari";
  * and assign the value of sahara_animal to "The Addax"
  *
  */
-var sahara_animal = "The Addax";
+let sahara_animal = "The Addax";
 
 /* Step 4
  *
@@ -29,7 +29,7 @@ var sahara_animal = "The Addax";
  * each planet in our solar system, in order of distance from the sun
  * Capitalize the names.
  */
-
+let planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
 
 /* Step 5
  *
@@ -38,9 +38,8 @@ var sahara_animal = "The Addax";
  * each galilean moon of Jupiter
  *
  */
-
-
-/* Step 6 φ
+let galilean_moons = ["Io", "Europa", "Ganymede", "Callisto"];
+/* Step 6
  *
  * Declare a variable named "golden_ratio"
  * and assign the value of golden_ratio to 1.61803398874
