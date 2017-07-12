@@ -437,11 +437,9 @@ class Person {
     this.age = age;
     this.gender = gender;
   }
-
   spendMoney(amount){
     this.money -= amount;
   }
-
   earnMoney(amount){
     this.money += amount;
   }
@@ -458,7 +456,20 @@ class Person {
  * @return {String}
  *
  */
+function purchaseLaptop(laptop){
+  if(laptopCosts.hasOwnProperty(laptop)){
+    return laptopCosts[laptop];
+  }else{
+    return -1;
+  }
+}
 
+// let laptopCosts = {
+//   MacBook: 1500,
+//   Alienware: 2500,
+//   HP: 499,
+//   Surface: 320
+// };
 
 /* Step 29
  *
@@ -471,7 +482,15 @@ class Person {
  * @return {Bool}
  *
  */
+function canTalkAbout(club){
+  if(club===club_name){
+    return false;
+  }else{
+    return true;
+  }
+}
 
+//const club_name = "Fight Club";
 
 /* Step 30
  *
