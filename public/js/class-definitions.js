@@ -241,7 +241,7 @@ let livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Fami
  * "cvs"
  *
  */
-
+let scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
 
 /* Step 19
  *
