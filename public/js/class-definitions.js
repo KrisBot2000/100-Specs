@@ -616,6 +616,47 @@ SolarSystem.prototype.removePlanet = function(planet){
  *   marries
  *
  */
+function PrincessLeia(name, money, age, gender){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+  this.isInTrouble = null;
+}
+
+
+
+console.log(PrincessLeia);
+
+//PrincessLeia.prototype.isInTrouble = this.isInTrouble;
+
+PrincessLeia.prototype.shootsGun = function(){
+  this.isInTrouble = false;
+  return "Leia shoots her gun wildly";
+}
+
+PrincessLeia.prototype.getsInTrouble = function(){
+  this.isInTrouble = true;
+  return "Help me Obi-wan Kenobi, you're my only hope";
+}
+
+PrincessLeia.prototype.marries = function(loveInterest){
+  if(loveInterest==="Han Solo"){
+    return true;
+  }
+  else if(loveInterest==="Luke Skywalker"){
+    return "Gross!";
+  }else{
+    return false;
+  }
+}
+
+//  * Add a method "marries" that takes a prospective
+//  * love interest and returns true for "Han Solo" or false for anyone
+//  * else.
+//  *
+//  * In the 'marries' method - Add a message of disapproval for "Luke Skywalker"
+//  * "Gross!"
 
 
 /* Step 34
