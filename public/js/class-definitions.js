@@ -458,7 +458,7 @@ class Person {
  */
 function purchaseLaptop(laptop){
   if(laptopCosts.hasOwnProperty(laptop)){
-    return laptopCosts[laptop];
+    return laptopCosts[laptop].toString();
   }else{
     return -1;
   }
@@ -490,8 +490,6 @@ function canTalkAbout(club){
   }
 }
 
-//const club_name = "Fight Club";
-
 /* Step 30
  *
  * Define an ES5 class named "Pen" with a property for
@@ -513,6 +511,12 @@ function canTalkAbout(club){
  *
  */
 
+function Pen(color){
+  this.color = color;
+}
+Pen.prototype.write = function(message){
+  return `${this.color}: ${message}`;
+}
 
 /* Step 31
  *
