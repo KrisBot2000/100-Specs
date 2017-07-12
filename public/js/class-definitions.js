@@ -193,7 +193,7 @@ let linuxFlavors = ["Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Biebe
  * "cytosine"
  *
  */
-
+let DNA = ["nucleatides", "guanine", "adenine", "thymine", "cytosine"];
 
 /* Step 16
  *
@@ -206,7 +206,12 @@ let linuxFlavors = ["Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Biebe
  * Surface      => 320
  *
  */
-
+let laptopCosts = {
+  MacBook: 1500,
+  Alienware: 2500,
+  HP: 499,
+  Surface: 320
+};
 
 /* Step 17
  *
